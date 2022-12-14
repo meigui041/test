@@ -10,7 +10,7 @@ func ttt() {
 	s := struct{}{}
 	s1 := struct{}{}
 	fmt.Println("空结构体内存使用情况", unsafe.Sizeof(s))
-	fmt.Printf("空结构体指针使用情况:s =%p,s1=%p,两个指针比较结果%v", &s, &s1, &s == &s1)3
+	fmt.Printf("空结构体指针使用情况:s =%p,s1=%p,两个指针比较结果%v", &s, &s1, &s == &s1)
 	strChan := make(chan string, 3)
 	sigChan := make(chan struct{}, 2)  //接收数据信号
 	sigChan1 := make(chan struct{}, 2) //操作完成信号
